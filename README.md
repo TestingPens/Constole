@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ```
 
 ### Usage
-To scan for hosts running vulnerable Consul agent services, you can provide an comma-separated list with host:port,host:port,...,etc or an input file.
+To scan for hosts running vulnerable Consul agent services, you can provide an comma-separated list with host:port,host:port,...,etc or an input file (1 target per line).
 ```
 python constole.py --targets '10.50.30.1:8500,10.50.30.2:8500'
 python constole.py --infile mytargets.txt

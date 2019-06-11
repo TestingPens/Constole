@@ -1,6 +1,6 @@
 ## Overview
 Scan for Consul agents and exploit them to gain shell.
-I've been messing around with Consul and while reading the API, found the agent registration service.
+I've been messing around with Consul and while reading the API, found the service registration endpoint.
 Registrations feature check functionality, which is typically used to provide health checks on nodes.
 A check can be an external application or script, which performs some kind of health check and provides some form of output.
 Essentially, this can be any script you define to run at certain time intervals.
